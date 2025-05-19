@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img.header {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    input[type="submit"]:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Ganti URL gambar di bawah jika kamu ingin header sendiri -->
+    <img src="https://www.pramuka-kwarcabju.org/assets/files/saka/logo/Saka_Wira_Kartika.png" alt="Header Gambar" class="header">
+
+    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Formulir Pendaftaran Junior Saka Wirakartika Koramil 0801/09 Sudimoro Angkatan-XIX</h2>
+    <form action="https://formsubmit.co/sakawirakartika09sudimoro@gmail.com" method="POST">
+      <!-- Konfigurasi FormSubmit -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://chat.whatsapp.com/IF8HZyPjuBm7miixeok8v9"> <!-- Ganti jika perlu -->
+
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="Nama Lengkap" required>
+
+      <label for="ttl">Tempat, Tanggal Lahir</label>
+      <input type="text" id="ttl" name="Tempat, Tanggal Lahir" required>
+
+      <label for="jk">Jenis Kelamin</label>
+      <select id="jk" name="Jenis Kelamin" required>
+        <option value="">-- Pilih Jenis Kelamin --</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+
+      <label for="alamat">Alamat Lengkap</label>
+      <textarea id="alamat" name="Alamat Lengkap" rows="3" required></textarea>
+
+      <label for="telepon">Nomor Telepon</label>
+      <input type="tel" id="telepon" name="Nomor Telepon" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required>
+
+      <label for="tujuan">Tujuan Pendaftaran</label>
+      <textarea id="tujuan" name="Tujuan Pendaftaran" rows="2"></textarea>
+
+      <input type="submit" value="Kirim Pendaftaran">
+    </form>
+  </div>
+</body>
+</html>
